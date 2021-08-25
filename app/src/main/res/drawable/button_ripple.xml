@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+        android:color="?attr/colorPrimary">
+<!--    <item android:id="@android:id/mask">-->
+<!--        <shape-->
+<!--                android:shape="ring"-->
+<!--                android:innerRadius="0dp"-->
+<!--                android:useLevel="false"-->
+<!--                android:thicknessRatio="4">-->
+<!--            <solid android:color="@color/white" />-->
+<!--        </shape>-->
+<!--    </item>-->
+    <item android:drawable="?attr/colorPrimaryVariant" />
+</ripple>

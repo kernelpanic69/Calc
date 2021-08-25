@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="calc"
+            type="com.github.arturnikolaenko.calc.Calculator" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                style="@style/Toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_constraintBottom_toTopOf="@+id/mainInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+                android:id="@+id/mainInput"
+                style="@style/MainView"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:gravity="end"
+                android:text='@{calc.text.replace("*", "\u00D7").replace("/", "\u00F7")}'
+                app:layout_constraintBottom_toTopOf="@id/controlsHost"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <LinearLayout
+                android:id="@+id/controlsHost"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainInput">
+
+            <include
+                    android:id="@+id/functionButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    layout="@layout/functions_layout"/>
+
+            <include
+                    android:layout_weight="1"
+                    android:id="@+id/mainButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/main_buttons_layout"/>
+
+            <Button
+                    android:id="@+id/btnSwitchControls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

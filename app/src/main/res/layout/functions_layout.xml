@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/functionButtons">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <Button
+                    android:id="@+id/btnCos"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_cos" />
+
+            <Button
+                    android:id="@+id/btnSin"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_sin" />
+
+            <Button
+                    android:id="@+id/btnTan"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_tan" />
+
+            <Button
+                    android:id="@+id/btnPi"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_pi" />
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <Button
+                    android:id="@+id/btnExp"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_exp" />
+
+            <Button
+                    android:id="@+id/btnExpA"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_exp_a" />
+
+            <Button
+                    android:id="@+id/btnLog"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_log" />
+
+            <Button
+                    android:id="@+id/btnLn"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_ln" />
+
+        </TableRow>
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <Button
+                    android:id="@+id/btnSqrt"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_sqrt" />
+
+            <Button
+                    android:id="@+id/btnPowA"
+                    style="@style/Button.Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btn_pow_a" />
+        </TableRow>
+
+    </TableLayout>
+</layout>
