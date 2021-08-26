@@ -41,13 +41,13 @@
             app:layout_constraintTop_toBottomOf="@id/mainInput">
 
             <include
-                android:id="@+id/mainButtons"
-                layout="@layout/main_buttons_layout" />
-
-            <include
                 android:id="@+id/functionButtons"
                 layout="@layout/functions_layout"
-                android:visibility="gone" />
+                android:visibility="visible" />
+
+            <include
+                android:id="@+id/mainButtons"
+                layout="@layout/main_buttons_layout" />
 
         </FrameLayout>
 
