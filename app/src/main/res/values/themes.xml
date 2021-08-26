@@ -2,11 +2,11 @@
     <!-- Base application theme. -->
     <style name="Theme.Calc" parent="Theme.AppCompat">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/blue_gray</item>
-        <item name="colorPrimaryVariant">@color/blue_gray_dark</item>
+        <item name="colorPrimary">@color/prussian_blue</item>
+        <item name="colorPrimaryVariant">@color/rich_black</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondary">@color/mandarin</item>
         <item name="colorOnSecondary">@color/black</item>
 
         <item name="windowActionBar">false</item>
@@ -14,22 +14,11 @@
         <item name="overflowButtonDrawable">@drawable/more_vert</item>
         <!-- Customize your theme here. -->
 
-        <item name="btnTextSize">@dimen/btn_text_size</item>
-        <item name="displayTextSize">@dimen/display_text_size</item>
-        <item name="btnTextSizeSmall">@dimen/btn_text_size_small</item>
-        <item name="displayTextSizeSmall">@dimen/display_text_size_small</item>
+        <item name="btnTextSize">@dimen/text_size_medium</item>
+        <item name="displayTextSize">@dimen/text_size_large</item>
 
         <item name="android:textColor">?attr/colorOnPrimary</item>
         <item name="android:itemBackground">?attr/colorPrimary</item>
-    </style>
-
-    <style name="Theme.Calc.Light">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/ultra_light_blue</item>
-        <item name="colorPrimaryVariant">@color/light_blue</item>
-        <item name="colorOnPrimary">@color/black</item>
-
-        <item name="android:textColor">?attr/colorOnPrimary</item>
     </style>
 
 </resources>

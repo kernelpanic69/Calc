@@ -14,7 +14,7 @@
     <string name="btn_op_minus">-</string>
     <string name="btn_op_multiply">\u00D7</string>
     <string name="btn_op_divide">\u00F7</string>
-    <string name="btn_backspace">\u2190</string>
+    <string name="btn_backspace">\u140A</string>
     <string name="btn_answer">=</string>
     <string name="btn_num_7">7</string>
     <string name="btn_num_8">8</string>

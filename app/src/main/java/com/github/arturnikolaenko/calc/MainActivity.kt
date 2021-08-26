@@ -1,15 +1,11 @@
 package com.github.arturnikolaenko.calc
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
-import android.content.res.Configuration
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.github.arturnikolaenko.calc.databinding.ActivityMainBinding
-import com.github.arturnikolaenko.calc.util.displayMetrics
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,8 +18,6 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         binding.calc = this.calc
-
-        setSupportActionBar(binding.toolbar)
 
         setupEventListeners()
         setContentView(binding.root)
@@ -40,58 +34,6 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-
-    private fun toggleFunctions() {
-        if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            val mainButtons = binding.mainButtons.root
-            val functions = binding.functionButtons.root
-            val dm = displayMetrics()
-            val duration = resources.getInteger(R.integer.material_motion_duration_medium_1)
-            val btn = binding.btnSwitchControls
-
-            isOnFunctions = if (isOnFunctions) {
-                mainButtons.visibility = View.VISIBLE
-
-                functions.animate()
-                    .translationXBy(dm.width.toFloat())
-                    .setListener(object : AnimatorListenerAdapter() {
-                        override fun onAnimationEnd(animation: Animator?, isReverse: Boolean) {
-                            functions.visibility = View.GONE
-                        }
-                    }).duration = duration.toLong()
-
-                btn.animate().rotationYBy(180f)
-                    .translationXBy(dm.width.toFloat() - btn.width)
-                false
-            } else {
-                functions.visibility = View.VISIBLE
-
-                functions.translationX = dm.width.toFloat()
-
-                functions.animate().translationXBy(-dm.width.toFloat())
-                    .setListener(object : AnimatorListenerAdapter() {
-                        override fun onAnimationEnd(animation: Animator?, isReverse: Boolean) {
-                            mainButtons.visibility = View.GONE
-                        }
-                    }).duration = duration.toLong()
-
-                btn.animate()
-                    .rotationYBy(180f)
-                    .translationXBy(-dm.width.toFloat() + btn.width)
-
-                true
-            }
-        }
-    }
-
-    override fun onBackPressed() {
-        if (isOnFunctions) {
-            toggleFunctions()
-        } else {
-            return super.onBackPressed()
-        }
-    }
-
 
     private fun setupEventListeners() {
         binding.mainButtons.apply {
@@ -136,11 +78,6 @@ class MainActivity : AppCompatActivity() {
 
             btnSqrt.setOnClickListener(createListenerStr("sqrt("))
             btnPowA.setOnClickListener(createListener('^'))
-
-        }
-
-        binding.btnSwitchControls.setOnClickListener {
-            toggleFunctions()
         }
     }
 

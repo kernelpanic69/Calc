@@ -1,9 +1,12 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="btn_text_size">24sp</dimen>
-    <dimen name="text_view_elevation">4dp</dimen>
-    <dimen name="toolbar_elevation">6dp</dimen>
-    <dimen name="display_text_size">52sp</dimen>
-    <dimen name="display_text_size_small">20sp</dimen>
-    <dimen name="btn_text_size_small">20sp</dimen>
+    <dimen name="text_size_large">56sp</dimen>
+    <dimen name="text_size_medium">28sp</dimen>
+    <dimen name="text_size_small">18sp</dimen>
+
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="elevation_medium">6dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+
+    <dimen name="button_box">56dp</dimen>
+
 </resources>

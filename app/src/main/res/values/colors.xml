@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue_gray">#37464f</color>
-    <color name="blue_gray_dark">#101f27</color>
-    <color name="orange">#ff8f00</color>
-    <color name="black_trans">#BA000000</color>
-    <color name="light_blue">#c7c7c7</color>
-    <color name="ultra_light_blue">#fafafa</color>
+    <color name="white">#FFFFFFFF</color>\
+
+    <color name="light_gray">#CCDBDC</color>
+    <color name="pewter_blue">#73929C</color>
+    <color name="prussian_blue">#1A485C</color>
+    <color name="rich_black">#001C29</color>
+
+    <color name="mandarin">#E87946</color>
+    <color name="sweet_brown">#AC3931</color>
 </resources>
