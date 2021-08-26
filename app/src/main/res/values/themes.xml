@@ -4,6 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/prussian_blue</item>
         <item name="colorPrimaryVariant">@color/rich_black</item>
+        <item name="colorPrimaryDarkest">@color/rich_black_darkest</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/mandarin</item>
@@ -11,7 +12,6 @@
 
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <item name="overflowButtonDrawable">@drawable/more_vert</item>
         <!-- Customize your theme here. -->
 
         <item name="btnTextSize">@dimen/text_size_medium</item>

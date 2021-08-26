@@ -1,15 +1,10 @@
 <resources>
     <string name="app_name">Calc</string>
     <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
 
     <!--Operator buttons -->
-    <string name="btn_brace_left">(</string>
-    <string name="btn_brace_right">)</string>
+    <string name="btn_bracket_left">(</string>
+    <string name="btn_bracket_right">)</string>
     <string name="btn_op_plus">+</string>
     <string name="btn_op_minus">-</string>
     <string name="btn_op_multiply">\u00D7</string>
@@ -27,6 +22,7 @@
     <string name="btn_num_3">3</string>
     <string name="btn_num_0">0</string>
     <string name="btn_decimal">.</string>
+
     <string name="btn_cos">cos</string>
     <string name="btn_sin">sin</string>
     <string name="btn_tan">tan</string>

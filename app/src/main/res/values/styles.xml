@@ -5,8 +5,8 @@
         <item name="android:background">@drawable/button_ripple</item>
         <item name="android:textSize">?attr/btnTextSize</item>
         <item name="android:elevation">@dimen/elevation_small</item>
-        <item name="android:width">@dimen/button_box</item>
-        <item name="android:height">@dimen/button_box</item>
+        <item name="android:layout_width">@dimen/button_box</item>
+        <item name="android:layout_height">@dimen/button_box</item>
         <item name="android:gravity">center</item>
     </style>
 
@@ -28,5 +28,18 @@
     <style name="Container">
         <item name="android:background">@drawable/button_container</item>
     </style>
+
+    <style name="ToolbarButton">
+        <item name="android:background">@drawable/toolbar_button</item>
+    </style>
+
+    <style name="ToolbarButton.First">
+        <item name="android:background">@drawable/toolbar_button_first</item>
+    </style>
+
+    <style name="ToolbarButton.Last">
+        <item name="android:background">@drawable/toolbar_button_last</item>
+    </style>
+
 
 </resources>

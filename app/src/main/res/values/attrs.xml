@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="colorPrimaryDarkest" format="color" />
+
     <attr name="btnTextSize" format="reference" />
     <attr name="btnTextSizeSmall" format="reference" />
-    <attr name="overflowButtonDrawable" format="reference" />
     <attr name="displayTextSize" format="reference" />
-    <attr name="displayTextSizeSmall" format="reference" />
+    <attr name="displayTextSizeSmall" format="dimension" />
+    <attr name="toolbarTopLeft" format="dimension" />
+    <attr name="toolbarTopRight" format="dimension" />
 </resources>
