@@ -7,7 +7,9 @@
     <dimen name="elevation_medium">6dp</dimen>
     <dimen name="elevation_large">8dp</dimen>
 
-    <dimen name="button_box">64dp</dimen>
+    <dimen name="button_box">56dp</dimen>
     <dimen name="container_radius">30dp</dimen>
+    <dimen name="button_box_squared">112</dimen>
+    <dimen name="input_height">80dp</dimen>
 
 </resources>

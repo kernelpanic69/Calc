@@ -4,7 +4,7 @@
 
     <!--Operator buttons -->
     <string name="btn_bracket_left">(</string>
-    <string name="btn_bracket_right">)</string>
+    <string name="btn_power">^</string>
     <string name="btn_op_plus">+</string>
     <string name="btn_op_minus">-</string>
     <string name="btn_op_multiply">\u00D7</string>
@@ -36,4 +36,5 @@
     <string name="btn_rt_x">\u1D43\u221Ax</string>
     <string name="btn_pow_a">x\u1D43</string>
     <string name="btn_percent">%</string>
+    <string name="btn_clear">C</string>
 </resources>
